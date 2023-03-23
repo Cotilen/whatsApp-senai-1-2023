@@ -1,0 +1,9 @@
+.white {
+  --primary-color: #ffffff;
+  --secondary-color: #f1f2f5;
+  --text-color: #121b21;
+  --text-subcolor: #87939c;
+  --text-receiver-background-color: #d9fdd3;
+  --separator-color: #cfd0d1;
+  --message-input-color: #ffffff;
+}

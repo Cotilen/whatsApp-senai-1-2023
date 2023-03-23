@@ -1,0 +1,23 @@
+/* Header Main*/
+
+.header-main {
+    background-color: var(--primary-color);
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 65px 1fr 220px;
+    gap: 10px;
+    padding: 10px 20px;
+    align-items: center;
+    color: var(--tertiary-color);
+    position: fixed;
+    width: 100%;
+}
+
+.icons-main {
+    display: flex;
+    font-size: 24px;
+    color: var(--tertiary-color);
+    gap: 20px;
+    position: fixed;
+    right: 20px;
+}

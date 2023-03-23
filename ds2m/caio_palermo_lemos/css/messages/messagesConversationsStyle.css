@@ -1,0 +1,103 @@
+.messages__conversations-container {
+  display: none;
+  padding-top: 25px;
+  min-height: 80vh;
+  max-height: 80vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  overflow: auto;
+  background-image: url(../../img/wallpaper-black.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.messages__conversations {
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.message-sender-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.message__sender {
+  margin-left: 100px;
+  padding: 12px;
+  display: grid;
+  justify-content: start;
+  grid-template-columns: auto auto;
+  position: relative;
+  max-width: 60%;
+  width: fit-content;
+  height: auto;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  color: var(--text-color);
+}
+
+.tri-right.left-top:after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -10px;
+  right: auto;
+  top: 0px;
+  bottom: auto;
+  border: 12px solid;
+  border-color: var(--secondary-color) transparent transparent transparent;
+}
+
+.message-receiver-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.message__receiver {
+  margin-right: 100px;
+  padding: 12px;
+  display: flex;
+  position: relative;
+  max-width: 60%;
+  width: fit-content;
+  height: auto;
+  background-color: var(--text-receiver-background-color);
+  border-radius: 8px;
+  color: var(--text-color);
+}
+
+.tri-right.right-top:after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: -10px;
+  top: 0px;
+  bottom: auto;
+  border: 12px solid;
+  border-color: var(--text-receiver-background-color) transparent transparent
+    transparent;
+}
+
+.message__content {
+  padding: 8px;
+  display: flex;
+  align-items: flex-start;
+  font-size: 1.5rem;
+}
+
+.message__time {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 1px;
+  margin-bottom: 2px;
+  margin-right: 4px;
+  font-size: 1rem;
+}

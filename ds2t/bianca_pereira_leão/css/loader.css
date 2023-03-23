@@ -1,0 +1,77 @@
+#loading {
+  position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .backgroundClaroBody{
+    background-color: #d6dbd9;
+}
+
+.backgroundEscuroBody{
+    background-color: #111b21;
+}
+  #loading span {
+    font-size: 15px;
+  }
+  
+  #loading span i{
+    padding: 10px;
+  }
+
+  .textLoader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .whatsapp-loading i {
+    font-size: 4rem;
+    color: gray;
+  }
+  
+  .whatsapp-loading{
+    padding-bottom: 3%;
+  }
+  
+  
+  #conteudo {
+    display: none; 
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 3px;
+    margin: 35px 0px 30px 0px;
+    background-color: #eee;
+    position: relative;
+  }
+  
+  .progress-bar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    background: linear-gradient(to right, #009688, #009688);
+    animation: fill 2.9s linear forwards;
+  }
+  
+  @keyframes fill {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  

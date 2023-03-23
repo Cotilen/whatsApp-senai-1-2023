@@ -1,0 +1,186 @@
+.conteudo_main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+}
+
+.conteudo_pesquisa_lista{
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo_listaDinamica{
+    height: 700px;
+    overflow: auto;
+
+}
+
+.conteudo_pesquisa{
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 23px;
+    gap: 10px;
+}
+
+#pesquisa{
+    background-color: antiquewhite;
+    border: solid 1px;
+    border-radius: 10px;
+    width: 300px;
+}
+#txtPesquisa{
+    background-color: transparent;
+    font-size: 23px;
+    font-style: italic;
+    width: 300px;
+    height: 30px;
+    border: none;
+
+}
+
+.conteudo-lista{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minMax(1fr)); /*autofit preenche os espaços das colunas*/
+    gap: 23px;
+    padding-top: 10px;
+    padding-left: 50px;
+    
+}
+
+.lista{
+    display: flex;
+    border: solid 1px ;
+    width: 90%;
+    gap: 20px;
+    background: rgba(217, 217, 217, 1);
+    align-items: center;
+}
+
+.img_usuario{
+    height: 80px;
+    width: 80px;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.titulo_texto{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lista_titulo{
+    font-size: 1.1rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+}
+
+.texto_Profissao{
+    font-size: 1rem;
+}
+
+@media (max-width: 1320px){
+    .conteudo_listaDinamica{
+        height: 620px;
+        overflow: auto;
+    
+    }
+      
+}
+
+@media (max-width: 700px){
+
+    #pesquisa{
+        width: 200px;
+    }
+
+    #txtPesquisa{
+        font-size: 20px;
+        font-style: italic;
+        width: 200px;
+    
+    }
+      
+    .conteudo_pesquisa{
+        display: flex;
+        align-items: center;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 23px;
+        gap: 10px;
+    }
+
+    .conteudo-lista{
+        padding-top: 10px;
+        padding-left: 20px;
+        
+    }
+
+    .lista{
+        width: 90%;
+        gap: 13px;
+    }
+    
+    .img_usuario{
+        height: 60px;
+        width: 60px;
+    }
+
+    .titulo_texto{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .conteudo_listaDinamica{
+        height: 450px;
+        overflow: auto;
+    
+    }
+
+    #container_principal{
+        display:flex;
+        flex-direction: column;
+        height: 100%;
+        /* height: 1000px; */
+        width: 100%;
+        border: 1px solid black;
+    }
+   
+}
+
+@media (max-width: 420px){
+    .conteudo_main{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    #container_principal{
+        display:flex;
+        flex-direction: column;
+        height: auto;
+        /* height: 1000px; */
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    #pesquisa{
+        background-color: antiquewhite;
+        border: solid 1px;
+        border-radius: 10px;
+        width: 90%;
+    }
+
+    #txtPesquisa{
+        background-color: transparent;
+        font-size: 23px;
+        font-style: italic;
+        width: 90%;
+        height: 30px;
+        border: none;
+    
+    }
+}

@@ -1,0 +1,103 @@
+:root{
+    --color-main: #00a884;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;    
+    background: linear-gradient(#00A884 0%, #00A884 127px, #eae6df 127px, #d1d7db 100%) ;
+    font-family: Segoe UI,Helvetica Neue,Helvetica,Lucida Grande,Arial,Ubuntu,Cantarell,Fira Sans,sans-serif;
+}
+
+.container{
+    display: flex;
+    height: calc(100vh - 40px);
+    width: 83vw;
+    background-color: aliceblue;
+}
+
+.container__aside{
+    height: 100%;
+    width: 30%; 
+    min-width: 300px;  
+    background: #fff;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    height: 59px;
+    background: #f0f2f5;
+    
+}
+
+.img__owner{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+.header__container{
+    display: flex;
+    font-size: 24px;
+}
+
+ol li{
+    padding: 10px;
+}
+
+.aside__pesquisa{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 49px;
+    background: #fff;
+    border-bottom: 1px solid #e9edef;
+}
+
+.lupa{
+    position: absolute;
+    margin-left: -38vh;    
+}
+
+.filter{
+    font-size: 20px;
+}
+
+.pesquisa{
+    height: 35px;
+    width: 80%;
+    background-color: #f0f2f5;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+
+.container__card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    height: 8vh;
+    border-bottom: 1px solid #e9edef;
+}
+
+.card:hover{
+    background: #e9edef;
+}
+
+.card__image{
+    margin-right: 10px;
+}

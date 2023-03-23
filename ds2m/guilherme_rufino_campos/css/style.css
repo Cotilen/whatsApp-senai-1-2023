@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.message__sent {
+    /* background-color: #d9fdd3; */
+    /* max-width: max-content; */
+    padding: 5px;
+    border-radius: 10px 10px 10px 10px;
+    line-height: 1.2;
+    margin: 20px 20px 20px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.message__received_span {
+    background-color: #D3D3D3;
+    max-width: max-content;
+    padding: 5px;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 20px;
+    line-height: 1.2;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(#00a884 0%, #00a884 130px, #d9dbd5 130px, #d9dbd5 100%);
+}
+
+
+/* .container {
+    width: 1396px;
+    max-width: 100%;
+    height: calc(100vh - 40px);
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.6),;
+} */
+
+.img-person-talking {
+    height: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+
+/*.box-rigth {
+	background-color:blue;
+	display:flex;
+	flex-direction:column;	
+	width:800px;
+}
+.box-left{
+	width:550px;
+}*/
+
+.container .box-left,
+.box-rigth {
+    height: 100vh;
+    width: 100%;
+    min-width: 300px;
+}
+
+.container .box-left,
+.box-rigth {
+    /*height:600px;*/
+}
+
+.chatlist,
+.container-message-submissions {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.container-message-submissions {
+    height: calc(100vh - 100px);
+    background: url();
+}
+
+.chatlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chatbox-input {
+    position: absolute;
+    bottom: 0;
+}
+
+.box-rigth {
+    position: relative;
+}
+
+.container-message-submissions {
+    background-color: white;
+}
+
+.person-talking {
+    width: 100%;
+    min-width: 300px;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.text-nmae-last-mensage {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    border-bottom: 5px solid #ededed;
+}
+
+div .search {
+    background-color: #fff;
+    display: flex;
+    height: 61px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #ededed;
+    gap: 15px;
+}
+
+div.chatlist .person-talking {
+    display: flex;
+    flex-direction: row;
+}
+
+.name-person-talking {
+    font-size: 25px;
+}
+
+div.box-left input {
+    background: #ededed;
+    border-radius: 9px;
+    border: none;
+    padding: 6px;
+    width: 650px;
+    height: 45px;
+}
+
+div.box-rigth input {
+    /*width: 100%;*/
+    outline: none;
+    border: none;
+    background: #fff;
+    padding: 6px;
+    width: 600px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 14px;
+    padding-left: 40px;
+}
+
+.my-mensage {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.header-left,
+.header-box-rigth {
+    background-color: #ededed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    padding: 0 50px 0 30px;
+}
+
+.header-box-rigth ul.icon {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.user-you-talk-do {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+}
+
+
+/*.header-box-rigth{
+	 background-color: #ededed;
+	 display:flex;
+	 flex-direction:row;
+}*/
+
+.chatbox-input {
+    background-color: #ededed;
+    display: flex;
+    gap: 30px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.img-user,
+.box-rigth .header-box-rigth .contact-photo {
+    border-radius: 50%;
+    height: 50px;
+}
+
+
+/*.box-left{
+	background-color:red;
+}*/
+
+.header ul,
+.box-rigth .header-box-rigth ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.header ul li,
+.box-rigth .header-box-rigth ul li {
+    list-style: none;
+}
+
+ul li img,
+.search img,
+div.chatbox-input img {
+    height: 28px;
+    width: 28px;
+}
+
+.header .header-left ul {
+    display: flex;
+    gap: 30px;
+}
+
+.header-cell {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    body {}
+    .box-rigth,
+    .header-left,
+    div.search {
+        display: none;
+    }
+    .header-cell {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        min-width: 10px;
+    }
+    .search-cell,
+    .more-contacts {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: white;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+    .search-cell {
+        display: flex;
+        height: 75px;
+        padding: 0 40px 0 40px;
+        width: 100%;
+    }
+    .more-contacts {
+        display: flex;
+        padding: 0 50px 0 50px;
+        height: 60px;
+    }
+    .more-contacts .text {
+        display: flex;
+        font-size: 30px;
+    }
+    .search-cell li {
+        display: flex;
+        flex-direction: row;
+    }
+    .search-cell ul {
+        display: flex;
+        gap: 80px;
+    }
+    .header-cell img {
+        height: 28px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .search-cell ul {
+        display: flex;
+        gap: 50px;
+    }
+    .more-contacts .text {
+        display: flex;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .more-contacts .text {
+        padding: 0 15px 0 15px;
+        font-size: 20px;
+    }
+    .more-contacts {
+        padding: 0 15px 0 15px;
+        margin-right: 15px;
+    }
+    .search-cell h1 {
+        font-size: 25px;
+    }
+    .search-cell ul {
+        display: flex;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 382px) {
+    .search-cell ul li img {
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .search-cell ul li img {
+        height: 20px;
+    }
+    .search-cell h1 {
+        font-size: 25px;
+        margin-left: 0;
+    }
+    .search-cell ul {
+        gap: 15px;
+    }
+    .more-contacts img {
+        height: 20px;
+    }
+    .more-contacts .text {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .search-cell ul li img {
+        height: 25px;
+        width: 20px;
+    }
+    .search-cell ul {
+        gap: 20px;
+    }
+    .more-contacts div.text {
+        padding: 0;
+        background-color: red;
+        margin: 0;
+    }
+}

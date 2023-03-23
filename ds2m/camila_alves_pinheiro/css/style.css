@@ -1,0 +1,21 @@
+:root {
+    --color-dark-blue: #253B80;
+    --color-grey-bg: #DEDCDC;
+    --color-message-send: #CDDCEB;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to top,
+            var(--color-grey-bg) 85%, var(--color-dark-blue) 15%);
+    display: grid;
+    place-content: center;  
+}
+
+main {
+    display: grid;
+    grid-template-columns: 30vw 60vw;
+    grid-template-areas: "contacts message";
+    background-color: #fff;
+}

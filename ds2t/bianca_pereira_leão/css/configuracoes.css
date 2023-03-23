@@ -1,0 +1,186 @@
+#configuracoes{
+    background-color: #ffff;
+    height: 100vh;
+    width: 35vw;
+    border-radius: 5px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#headerConfiguracoes{
+    display: flex;
+    background-color: #008069;
+    height: 14%;
+    justify-content: start;
+    gap: 2vw;
+    padding-left: 1.65vw;
+    padding-top: 6vh;
+    color: #ffff;
+}
+
+#headerConfiguracoes button{
+    background-color: transparent;
+    border: none;
+    height: auto;
+}
+
+#back{
+    color: #ffff;
+    font-size: 20px;
+    
+}
+
+h3{
+    display: grid;
+    place-self: center;
+   cursor: context-menu;
+   font-weight: bold;
+}
+
+#perfilConfiguracoes{
+    width: 100px;
+}
+
+.me-container{
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+    gap: 2vw;
+}
+
+.text-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ul{
+    list-style: none;
+}
+
+
+.content-container-configuracoes{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content ul li{
+  border-bottom: 1px solid #ccc ;
+  padding-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.main-content ul{
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+  
+}
+.main-content ul:hover{
+    cursor: pointer;
+}
+.main-content ul li a{
+ display: flex;
+ gap: 1vw;
+}
+
+.aboutme{
+    display: flex;
+    gap: 2vw;
+}
+
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: -1; 
+  }
+  
+  .modal-content {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    margin: 38vh auto;
+    padding: 20px;
+    z-index: 0; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+ 
+
+  .divLabels{
+    padding: 5% 0%;
+  }
+  
+
+
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .cancel-button,.ok-button{
+    padding: 10px 20px;
+    border-radius: 4px;
+  }
+
+  .cancel-button{
+    border: .4px solid #ccc;
+    background-color: transparent;
+    color: #008069;
+    font-weight: bold;
+    transition: color .3s ease-in-out;
+  }
+  .cancel-button:hover{
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  .button-group{
+    display: flex;
+    justify-content: end;
+    gap: 1vw;
+  }
+
+  .ok-button{
+    border: none;
+    background-color: #008069;
+    color: #ffff;
+    font-weight: bold;
+    transition: color .3s ease-in-out;
+  }
+  .ok-button:hover{
+    background-color: #005452;
+  }
+  
+  
+  .form-check-input[type="radio"]:checked {
+    background-color: #008069;
+  }
+
+  .form-check-label{
+    display: flex;
+    gap: 20px;
+    font-size: 1.1rem;
+  }
+  
+
+@media (max-width:500px) {
+    #configuracoes{
+        width: 100vw;
+    }
+}

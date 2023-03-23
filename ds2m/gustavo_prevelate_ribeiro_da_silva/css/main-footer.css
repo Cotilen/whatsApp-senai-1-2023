@@ -1,0 +1,32 @@
+/* Panel to send messages */
+
+.main-footer {
+    color: var(--tertiary-color);
+    padding: 10px;
+    grid-area: footer;
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 50px minmax(350px, 1fr);
+    align-items: center;
+    font-size: 24px;
+    gap: 20px;
+    position: fixed;
+    bottom: 0%;
+    width: 100vw;
+}
+
+.main-footer-send-message {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.panel-finder-main {
+    height: 40px;
+    width: auto;
+    min-width: 1300px;
+    border-radius: 40px;
+    border-color: var(--border-color);
+    border-width: 4px;
+}

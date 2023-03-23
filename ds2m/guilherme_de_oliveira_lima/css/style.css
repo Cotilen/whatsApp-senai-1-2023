@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(#00a884 0%, #00a884 127px, #d9dbd5 127px, #d9dbd5 100%);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    height: 96%;
+    width: 83.5%;
+    background-color: white;
+}
+
+.pesquisa-celular {
+    display: none;
+}
+
+.title {
+    display: none;
+}
+
+.icons-celular {
+    display: none;
+}
+
+article {
+    flex: 30%;
+    overflow: hidden;
+}
+
+aside {
+    flex: 70%;
+    overflow: hidden;
+    border-bottom: 6px solid #25d366;
+}
+
+.icons {
+    display: flex;
+    gap: 30px;
+    font-size: 1.6rem;
+}

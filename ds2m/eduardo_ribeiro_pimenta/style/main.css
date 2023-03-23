@@ -1,0 +1,58 @@
+.contact__header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.main__name{
+    font-weight: 100;
+}
+.header__icons{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 100;
+    gap: 40px;
+    padding-right: 40px;
+}
+.header__icons i:hover{
+    color: #fff5;
+    cursor: pointer;
+}
+.send{
+    display: flex;
+    color: #fff5;
+    gap: 20px;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.send i:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+#send__textfield{
+    padding-left: 40px;
+    color: #fff;
+    background-color: #2A2F33;
+    border: none;
+    min-height: 40px; 
+    width: 90%;
+    min-width: 260px;
+    font-size: 1.2rem;
+    border-radius: 100px 100px 100px 100px;
+    resize: none;
+    place-self: center;
+}
+
+#back{
+    display: none; 
+   color: #fff;
+   padding-right: 0px;
+   padding-left: 10px;
+   font-size: 30px;
+}
+

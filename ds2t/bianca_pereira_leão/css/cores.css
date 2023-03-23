@@ -1,0 +1,63 @@
+.backgroundClaroBody{
+    background-color: #d6dbd9;
+}
+
+.fontColorWhite{
+    color: #f7f7f7;
+}
+
+.backgroundEscuroBody{
+    background-color: #111b21;
+}
+
+.bgWhiteUl{
+    background-color: #ffff;
+}
+.bgdarkUl{
+    background-color: #111b21;
+}
+.bgdarkUl:hover{
+    background-color: #202c33;
+}
+.bgWhiteUl:hover{
+    background-color: #f1f1f1;
+}
+
+.backgroudGreenHeaderBody{
+    background-color: #009688;
+}
+.backgroundClaroSideHeader{
+    background-color: #ededed;
+}
+.backgroundEscuroSideHeader{
+    background-color: #202c33;
+}
+.backgroundClaroSearchBar{
+    background-color: #f7f7f7;
+}
+
+.imgClara{
+    background: url(../img/bg.webp) repeat;
+}
+
+.imgEscura{
+    background: url(../img/bg2.webp);
+}
+
+.tomato{
+    background-color: tomato;
+}
+
+#backgroundColorModalContent{
+    background-color: white;
+  }
+#backgroundColorModalContent2{
+    background-color: #3b4a54;
+  }
+
+.backgroundColorConfigContent{
+    background-color: white;
+  }
+.backgroundColorConfigContent2{
+    background-color: #3b4a54;
+  }

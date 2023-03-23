@@ -1,0 +1,144 @@
+.chat header {
+    height: 60px;
+}
+
+.chat {
+    width: auto;
+}
+
+.chat header .profile-photo {
+    height: 40px;
+    width: 40px;
+    background-color: #dddddd;
+}
+
+.chat header a {
+    width: 50px;
+    text-align: center;
+}
+
+.chat header a i {
+    font-size: 24px;
+    line-height: 60px;
+}
+
+.chat .dialog {
+
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 50px;
+}
+
+.chat .dialog .message {
+    display: inline-block;
+    margin: 2px 0;
+    border-radius: 5px;
+    padding: 7px 50px 7px 10px;
+    position: relative;
+    font-size: 0.625rem;
+    font-size: clamp(0.625rem, 0.5rem + 0.625vw, 1.25rem);
+}
+
+.chat .dialog .message::after {
+    content: attr(data-time);
+    position: absolute;
+    bottom: 2px;
+    right: 6px;
+    font-size: 0.5rem;
+    font-size: clamp(0.5rem, 0.4625rem + 0.1875vw, 0.6875rem);
+}
+
+.chat .dialog .me {
+    background-color: #dcf8c6;
+    margin-left: auto;
+}
+
+.chat .dialog .them {
+    background-color: #ffffff;
+    margin-right: auto;
+}
+
+.chat .dialog .them.tail::before,
+.chat .dialog .me.tail::before {
+    content: "";
+    background-color: transparent;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    position: absolute;
+    top: 0;
+    display: block;
+}
+
+.chat .dialog .them.tail::before {
+    border-top-color: #ffffff;
+    left: -10px;
+}
+
+.chat .dialog .me.tail::before {
+    border-top-color: #dcf8c6;
+    right: -10px;
+}
+
+.chat footer {
+    height: 60px;
+}
+
+.chat footer .icon {
+    font-size: 24px;
+}
+
+.icon-message i {
+    width: 100%;
+}
+
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav,
+.status-friend {
+    display: flex;
+}
+
+#emoji-list {
+    display: none;
+    position: absolute;
+    bottom: 60px;
+    right: 20px;
+    z-index: 9999;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .emoji {
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+  }
+
+#guarda-emoji{
+    display: flex;
+    flex-direction: column;
+}
+
+#emoji-list {
+    height: auto;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 1%;
+    width: fit-content;
+  }
+  
+  #guarda-emoji.show-emoji-list #emoji-list {
+    display: block;
+  }
+  

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/scroll-bar.css">
+    <link rel="stylesheet" href="./css/header-my-contact.css">
+    <link rel="stylesheet" href="./css/header-contacts.css">
+    <link rel="stylesheet" href="./css/header-search.css">
+    <link rel="stylesheet" href="./css/main-header.css">
+    <link rel="stylesheet" href="./css/main-messages.css">
+    <link rel="stylesheet" href="./css/main-footer.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <!-- Website for the use of the icons -->
+    <script src="https://kit.fontawesome.com/3cc9c6ad82.js" crossorigin="anonymous"></script>
+
+    <!-- Import from JavaScript -->
+    <script src="./js/app.js" defer type="module"></script>
+    
+
+    <!-- Site Title -->
+    <title>WhatsApp</title>
+</head>
+
+<body>
+    <!-- Left part of the site, where my contact, the search panel and the contacts of my site will be separated -->
+    <header id="header" class="header ">
+        <div class="panel-header ">
+            <div> <img class="my-panel" src="./img/spiderMan.jpg" alt=""></div>
+            <div class="icons">
+                <span><i class="fas fa-users"></i></span>
+                <span><i class="fa-solid fa-circle-notch"></i></span>
+                <span><i class="fa-solid fa-message"></i></span>
+                <span><i class="fas fa-ellipsis-v"></i></span>
+            </div>
+        </div>
+        <!-- Search panel-->
+        <div class="container-panel-finder ">
+            <input class="panel-finder-header" placeholder="Find a contact"> </input>
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+        </div>
+        <!-- Container where my contacts will be -->
+        <div id="container">
+            <div class="contact" id="contact">
+                <img src="./img/contact1.png" alt="" class="image-contact">
+                <div class="container-contact">
+                    <h2 class="name-contact" id="name"></h2>
+                    <div class="description-contact" id="description"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Right part of my website, where the contact I selected, my conversations and a typing panel will be separated-->
+    <main class="main" id="main">
+        <!-- Panel of the contact I selected -->
+        <div class="inside-message-main" id="inside-message-main">
+            <div class="header-main">
+                <div class="back-contacts" id="back-contacts">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Panel where my conversations are -->
+        <div id="external-message-main"></div>
+        <!-- Panel of search -->
+        <div class="main-footer">
+            <div class="main-footer-send-message">
+                <span><i class="fa-sharp fa-regular fa-face-smile"></i></span>
+                <input class="panel-finder-main" placeholder="Type here to send a message"></input>
+                <span><i class="fa-solid fa-microphone-lines"></i></span>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>

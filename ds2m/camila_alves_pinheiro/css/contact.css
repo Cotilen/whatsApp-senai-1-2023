@@ -1,0 +1,108 @@
+.container__contact {
+    grid-area: contacts;
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+}
+
+.container__card {
+    overflow: auto;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 5px 15px;
+    height: 80px;
+    cursor: pointer;
+}
+
+
+.img__contact {
+    width: 55px;
+    height: 55px;
+    border-radius: 100px;
+}
+
+.img__clerk{
+    display: block;
+    width: 55px;
+    height: 55px;
+    border-radius: 100px;
+}
+
+
+.name__contact {
+    font-size: 1rem;
+}
+
+.description__contact {
+    font-size: 0.8rem;
+}
+
+.functions {
+    height: 80px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.functions__icons {
+    gap: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.functions__icons li i {
+    font-size: 1.3rem;
+    color: #000;
+    cursor: pointer;
+}
+
+.functions__icons li i:hover {
+    color: var(--color-dark-blue);
+}
+
+.container__search{
+    display: flex;
+    padding: 0 15px 0 25px ;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container__search .fa-magnifying-glass{
+    position: absolute;
+  
+    
+}
+
+.container__search i:hover{
+    color: #253B80;
+}
+
+#input__search{
+    border: none;
+    width: 20vw;
+    height: 35px;
+    padding-left: 60px;
+    font-size: 15px;
+}
+
+.img__logo1{
+    display: none;
+}
+
+#icon__search{
+    display: none ;
+}
+
+#input__message{
+    border: none;
+    width: 40vw;
+    height: 40px;
+    padding-left: 8px;
+    font-size: 1.1rem;
+}

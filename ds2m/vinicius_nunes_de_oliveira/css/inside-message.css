@@ -1,0 +1,145 @@
+.inside-message {
+    display: flex;
+    flex-direction: column;
+}
+
+.message__header {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 75px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+}
+
+.header__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    margin-left: 16px;
+}
+
+.header__icon {
+    font-size: 1.5rem;
+    color: gray;
+    width: 100px;
+    display: flex;
+    gap: 32px;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+}
+
+.message__content {
+    height: 80%;
+}
+
+.message__content__card {
+    height: 100%;
+}
+
+.message__footer {
+    height: 75px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    color: gray;
+    align-items: center;
+    gap: 32px;
+    padding: 16px;
+}
+
+.message__footer input {
+    width: 100%;
+    height: 100%;
+    padding-left: 32px;
+    border-radius: 16px;
+    border: 1px solid #0005;
+}
+
+.content__me {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.me__align {
+    max-width: 600px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    background-color: #d9fdd3;
+    padding: 16px;
+    margin-top: 16px;
+    margin-right: 16px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.me__send {
+    font-size: 1rem;
+    color: darkslategray;
+}
+
+.me__date {
+    font-size: 0.75rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    color: lightslategrey;
+}
+
+
+/* 
+<div class="message__content">
+<div class="content__me">
+  <h5 class="me__send">me</h5>
+  <span class="me__message"
+    >Hello Leonid, how are you doing today?</span
+  >
+  <span class="me__date">14:25</span>
+</div> */
+
+.content__other {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.other__align {
+    max-width: 600px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    background-color: #fff;
+    padding: 16px;
+    margin-top: 16px;
+    margin-left: 16px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.other__send {
+    font-size: 1rem;
+    color: darkslategray;
+}
+
+.other__date {
+    font-size: 0.75rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    color: lightslategrey;
+}

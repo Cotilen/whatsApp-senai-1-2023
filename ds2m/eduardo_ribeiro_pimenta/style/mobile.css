@@ -1,0 +1,43 @@
+
+.main__mobile{
+    display: none;
+}
+.nav__mobile{
+    display: none;
+}
+
+@media screen and (max-width: 48em){
+    .pure-g{
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    #main{
+        display: none ;
+    }
+
+    #nav{
+        max-width: unset;
+        width: 100%;
+    }
+
+    #back{
+        display: block;
+    }
+    #back:hover{
+        cursor: pointer;
+        opacity: 60%;
+    }
+}
+@media screen and (min-width: 48em){
+
+    .pure-g{
+        flex-wrap: nowrap
+    }
+    #main{
+        display: flex !important;
+    }
+    #nav{
+        display: grid !important;
+    }
+}

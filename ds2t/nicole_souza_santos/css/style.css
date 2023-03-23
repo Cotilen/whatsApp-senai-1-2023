@@ -1,0 +1,28 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background: #252525;
+}
+header{
+    height: 100px;
+    background: #191825;
+}
+main{
+    display: grid;
+    place-content: center;
+    background: #252525;
+}
+footer{
+    
+    font-size: 2rem;
+    display: flex;
+    place-content: end;
+    background: #252525;
+}
+.git{
+    color: #865DFF;
+    margin-right: 30px;
+}

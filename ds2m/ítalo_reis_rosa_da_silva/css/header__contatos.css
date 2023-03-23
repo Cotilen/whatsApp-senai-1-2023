@@ -1,0 +1,19 @@
+.header-contatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 575px;
+    height: 5vh;
+    background-color: rgb(80, 77, 77);
+}
+.search__bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.textField__search{
+    height: 30px;
+    width: 400px;
+}

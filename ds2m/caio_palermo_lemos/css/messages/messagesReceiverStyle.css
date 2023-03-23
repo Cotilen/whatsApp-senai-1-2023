@@ -1,0 +1,40 @@
+.messages__receiver {
+  display: none;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  background-color: var(--secondary-color);
+}
+
+.receiver__profile {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  width: 100%;
+}
+
+.profile__image {
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  margin-left: 78px;
+  margin-right: 28px;
+}
+
+.profile__name {
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+.receiver__options {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  margin: 0px 48px;
+}
+
+.receiver__options i {
+  font-size: 1.75rem;
+  color: var(--text-color);
+}

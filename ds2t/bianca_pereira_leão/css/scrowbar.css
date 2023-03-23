@@ -1,0 +1,30 @@
+#contacts{
+    height: 75vh;
+    overflow-y: auto; 
+}
+
+#contacts::-webkit-scrollbar {
+  width: 6px; 
+}
+
+#contacts::-webkit-scrollbar-thumb {
+  background-color: #ccc; 
+}
+
+  main::-webkit-scrollbar {
+    width: 1px; 
+    height: 3px;
+  }
+  
+  main::-webkit-scrollbar-thumb {
+    background-color: #ccc; 
+  }
+  
+  #configuracoes::-webkit-scrollbar {
+    width: 6px; 
+  }
+  
+  #configuracoes::-webkit-scrollbar-thumb {
+    background-color: #ccc; 
+  }
+  

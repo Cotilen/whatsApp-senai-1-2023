@@ -1,0 +1,15 @@
+/* Root of the site */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #000000;
+    --secundary-color: #eeff00;
+    --tertiary-color: #00A8FF;
+    --border-color: #00FFFF;
+    --background-Image: url(../img/background.jpg);  
+}

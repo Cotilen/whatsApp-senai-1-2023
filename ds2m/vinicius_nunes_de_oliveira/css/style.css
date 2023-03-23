@@ -1,0 +1,53 @@
+:root {
+    /*-------PALETA-------*/
+    --primary-color: #f0f2f5;
+    --secundary-color: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #f0f2f5;
+    height: 100vh;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+.media {
+    background-color: white;
+    width: 600px;
+    height: 100vh;
+    box-shadow: 4px 4px 8px #fff2;
+    border: 0.5px solid #f0fff3;
+}
+
+#container {
+    overflow: auto;
+    height: 90%;
+}
+
+.inside-message {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+@media (max-width: 640px) {
+    main {
+        flex-direction: column;
+    }
+    .media {
+        width: 100vw;
+        height: 100%;
+        /* display: block; */
+    }
+    #inside-message {
+        width: 100vw;
+        display: none;
+    }
+}

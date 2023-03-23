@@ -1,0 +1,56 @@
+@media (max-width: 980px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+  }
+
+  .messages__background-default {
+    display: none;
+  }
+
+  .messages__receiver {
+    display: block;
+  }
+
+  .messages__conversations-container {
+    display: block;
+  }
+
+  .messages__interactions {
+    display: block;
+  }
+
+  .chats__profile-options {
+    display: none;
+  }
+
+  .chats__profile-options-mobile {
+    display: block;
+  }
+
+  .chats__profile-options-mobile {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 16px;
+    background-color: var(--secondary-color);
+  }
+
+  .profile-options-mobile__icons {
+    display: flex;
+    gap: 32px;
+  }
+
+  .chats__user-interactions {
+    display: flex;
+    justify-content: space-around;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    padding: 8px 0px;
+    background-color: var(--secondary-color);
+  }
+
+  .filter__input {
+    width: 75vw;
+  }
+}

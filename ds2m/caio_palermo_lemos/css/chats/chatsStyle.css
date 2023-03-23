@@ -1,0 +1,4 @@
+.chats {
+  background-color: var(--primary-color);
+  border-right: 1px solid var(--separator-color);
+}

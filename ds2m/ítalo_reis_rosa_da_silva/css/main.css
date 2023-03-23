@@ -1,0 +1,81 @@
+main {
+    grid-template-areas: 'header''main''footer';
+    grid-template-rows: 85px 1fr 65px;
+    background-image: url(../img/fundoWhatsApp.jpg);
+    height: 100%;
+    display: none;
+}
+
+.main__header {
+    background-color: gray;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 65px 1fr 65px;
+    gap: 20px;
+    padding: 10px 20px;
+    align-items: center;
+    color: var(--font__color);
+}
+
+.main__icons {
+    display: flex;
+    font-size: 24px;
+    color: var(--font__color);
+    gap: 40px;
+}
+
+.main__mensagem {
+    grid-area: main;
+    height: 100%;
+    background-image: url(./img/noite.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+}
+
+.main__mensagem__contact,
+.main__mensagem__contact__end {
+    max-width: 400px;
+    margin: 10px;
+    padding: 5px;
+    background-color: var(--font__color);
+    border-radius: 8px;
+}
+
+.main__mensagem__contact__end {
+    background-color: #99FF99;
+    align-self: flex-end;
+}
+
+.main__mensagem__sender {
+    font-weight: 900;
+    padding-bottom: 2px;
+}
+
+.main__mensagem__hora {
+    display: flex;
+    justify-content: end;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+.main__footer {
+    color: var(--font__color);
+    padding: 10px;
+    grid-area: footer;
+    background-color: var(--primary__color);
+    display: grid;
+    grid-template-columns: 50px minmax(350px, 1fr);
+    align-items: center;
+    font-size: 24px;
+    gap: 20px;
+}
+.camp__main{
+    width: 50vw;
+    height: 40px;
+    margin-left: 190px;
+}

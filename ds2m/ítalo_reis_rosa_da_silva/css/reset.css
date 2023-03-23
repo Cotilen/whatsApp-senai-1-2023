@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary__color: gray;
+    --font__color: #b0bec5;
+    --backContact__color: rgb(21, 145, 21);
+}
+
+html {
+    background-color: var(--primary__color);
+}
+
+body {
+    display: grid;
+    grid-template-areas: 'header main';
+    grid-template-columns: minmax(300px, 400px) minmax(400px, 1fr);
+}
+

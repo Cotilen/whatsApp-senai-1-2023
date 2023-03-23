@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- link do Ico -->
+    <link rel="shortcut icon" href="./recursos/ico/whatsapp.ico" type="image/x-icon" />
+
+    <!-- Script do js -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+    <script src="./recursos/contatos.js" defer></script>
+    <script src="./index.js" defer type="module"></script>
+
+    <!-- link do css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/left-side.css">
+    <link rel="stylesheet" href="./css/right-side.css">
+    <title>WhatsApp</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <!-- lado esquerdo -->
+        <div class="left__side" id="left__side">
+
+            <!-- header -->
+            <header>
+                <div class="userImg">
+                    <img src="./recursos/img/user.png" class="cover" alt="User image">
+                </div>
+                <ul class="nav__icons">
+                    <li>
+                        <ion-icon name="scan-circle-outline"></ion-icon>
+                    </li>
+                    <li>
+                        <ion-icon name="chatbox"></ion-icon>
+                    </li>
+                    <li>
+                        <ion-icon name="ellipsis-vertical"></ion-icon>
+                    </li>
+                </ul>
+            </header>
+
+            <!-- search - pesquisa -->
+            <div class="search__chat">
+                <div>
+                    <input type="text" placeholder="Search or start new chat">
+                    <ion-icon name="search-outline"></ion-icon>
+                </div>
+
+            </div>
+
+            <!--  chat list - lista de mensagem -->
+            <div class="chatlist" id="chatlist">
+                <div class="block">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- lado direito -->
+        <div class="right__side" id="right__side">
+
+        </div>
+
+</body>
+
+</html>

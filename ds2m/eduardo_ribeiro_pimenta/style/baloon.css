@@ -1,0 +1,28 @@
+.messsage__baloon__me{
+    height: fit-content;
+    width: fit-content;
+    background-color: #00B09C;
+    border-radius: 20px 20px 0px 20px;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.messsage__baloon{
+    height: fit-content;
+    width: fit-content;
+    background-color: #252D30;
+    border-radius: 20px 20px 20px 0px;
+    place-self: flex-start;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.baloon_text{
+    margin: 10px;
+    font-size: 1.3rem;
+    word-wrap: break-word;
+}
+.baloon_time{
+    margin: 10px;
+    place-self: flex-end;
+}

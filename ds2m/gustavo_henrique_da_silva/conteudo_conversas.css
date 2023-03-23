@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+.conteudo_conversas {
+    display: grid;
+    grid-template-areas:
+        'header'
+        'main';
+    grid-template-rows: 50px 1fr;
+}
+
+.conteudo_titulo {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20;
+    background: linear-gradient(180deg, #8E01BF 0%, rgba(104, 0, 140, 0.685393) 100.6%, rgba(176, 44, 222, 0) 117.06%);
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.conteudo_titulo:hover {
+    font-size: 1.6rem;
+}
+
+.volta_home{
+    display: none;
+}
+
+.conteudo_imagem {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.mensagem{
+
+    height: 700px;
+    overflow: auto;
+}
+
+#container {
+    height: 700px;
+    overflow: auto;
+
+}
+
+.remetente_mensagem_tempo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 10px;
+    padding-left: 10px;
+    height: auto;
+    width: 60%;
+    background: linear-gradient(180deg, #8E01BF 0%, rgba(142, 1, 191, 0.695979) 31.25%, rgba(142, 1, 191, 0.615653) 50%, rgba(142, 1, 191, 0.595408) 54.69%, rgba(142, 1, 191, 0.58132) 67.19%, rgba(142, 1, 191, 0.563916) 74.48%, rgba(142, 1, 191, 0.523427) 88.02%, rgba(142, 1, 191, 0) 100%);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
+}
+
+#usuarioPrincipalVerde{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 35%;
+    padding-left: 10px;
+    height: auto;
+    width: 60%;
+    background: linear-gradient(180deg, #02b671 0%, rgba(1, 191, 102, 0.637) 31.25%, rgba(1, 191, 102, 0.658), rgba(1, 191, 128, 0.595) 54.69%, rgba(1, 191, 112, 0.603) 67.19%, rgba(1, 191, 134, 0.564) 74.48%, rgba(1, 191, 112, 0.523) 88.02%, rgba(142, 1, 191, 0) 100%);
+    border-top-right-radius: 1px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.remetente{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    color: black;
+    
+}
+
+#remetente_usuario{
+    font-size: 1.1rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+#mensagem_texto{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.1rem;
+    font-family: 'Open Sans', sans-serif;
+    word-wrap: break-word; /*Quebra a linha para não ultrapassar a div*/
+    height: auto;
+}
+
+#tempo_resposta{
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.envia_mensagemNone{
+    display: none;
+}
+
+.envia_mensagemFlex {
+    display: flex;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    background-color: antiquewhite;
+    border: solid 1px;
+    border-radius: 10px;
+    width: 90%;
+    height: 33px;
+    margin-bottom: 10px;
+}
+
+#txtMensagem {
+    background-color: transparent;
+    font-size: 16px;
+    height: 33px;
+    font-style: italic;
+    border: none;
+    width: 90%;
+
+}
+
+.icons {
+    display: flex;
+    padding-left: 5px;
+    gap: 13px;
+
+}
+
+.conteudo_imagem {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../imagens_aplicativo/background_Paper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*Tamanho da imagem é de acordo com o container*/
+    height: 100%;
+}
+
+@media (max-width: 1320px){
+    #container{
+    height: 650px;
+    overflow: auto;
+    }
+    .mensagem{
+        height: 650px;
+    overflow: auto;
+    }    
+}
+@media (max-width: 700px){
+    #container {
+        height: 570px;
+        overflow: auto;
+    }
+    .mensagem {
+        height: 570px;
+        overflow: auto;
+    }
+    .conteudo_conversas {
+        display: grid;
+        grid-template-areas:
+            'header'
+            'main';
+        grid-template-rows: 40px 1fr;
+    }
+    .remetente_mensagem_tempo{
+        height: auto;
+        width: 90%;
+        
+    }
+}
+
+@media (max-width: 450px){
+    .volta_home{
+        display: block;
+        width: 5%;
+        padding-left: 10px;
+        font-size: 20px;
+        color: rgb(156, 10, 214);
+        padding-right: 2px;
+    }
+
+    .conteudo_pesquisa_lista_None{
+        display: none;
+    }
+    .conteudo_pesquisa_lista_Aparecer{
+        display: flex;
+    }
+
+
+    .conteudo_conversas{
+           display: none;
+           flex-direction: column;
+    }
+    #container{
+        height: 450px;
+    }
+
+    .aparecerConversa{
+        display: flex;
+    }
+}

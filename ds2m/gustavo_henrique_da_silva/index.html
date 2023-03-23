@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="conteudoMain.css">
+    <link rel="stylesheet" href="conteudo_conversas.css">
+    <script src="https://kit.fontawesome.com/52cd6710a1.js" crossorigin="anonymous"></script>
+    <script src="./index.js" defer type="module"></script>
+    <title>WhatsApp</title>
+</head>
+
+<body>
+    <section class="container_principal" id="container_principal">
+        <header>
+            <div class="conteudo_atalhos">
+                <div class="nav_atalhos">
+                    <img src="./imagens_aplicativo/Grupo.svg" alt="novo grupo">
+                    <img src="./imagens_aplicativo/Status.svg" alt="status">
+                    <img src="./imagens_aplicativo/Mensagen.svg" alt="novas mensagens">
+                    <img src="./imagens_aplicativo/Camera.svg" alt="câmera">
+                </div>
+                <div class="conteudo_logo">
+                    <img src="./imagens_aplicativo/whatsapp.svg" alt="logo do whatsapp">
+                </div>
+            </div>
+        </header>
+        <div class="conteudo_main">
+            <div class="conteudo_pesquisa_lista" id="conteudo_pesquisa_lista">
+                <div class="conteudo_pesquisa">
+                    <div id="pesquisa">
+                        <input type="text" id="txtPesquisa" placeholder="Pesquisar...">
+                    </div>
+                    <div class="img_Pesquisa">
+                        <img src="./imagens_aplicativo/icon_Pesquisa.svg" id="imgPesquisa" alt="pesquisa">
+                    </div>
+                </div>
+                <div class="conteudo_listaDinamica" id="conteudo_listaDinamica">
+                    <div class="conteudo-lista" id="conteudo-lista">
+                        <!-- <div class="lista">
+                            <img src="./imagens_aplicativo/Group.png" class="img_usuario" alt="usuario">
+                            <div class="titulo_texto">
+                                <h5 class="lista_titulo">
+                                    Ana Maria
+                                </h5>
+                                <p class="texto">
+                                    Front-end
+                                </p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="conteudo_conversas" id="conteudo_conversas">
+                <header class="conteudo_titulo">Novas Mensagens
+                </header>
+                <div class="conteudo_imagem">
+                    <li>
+                        <a class="volta_home" id="volta_home" href="#conteudo_listaDinamica" aria-label="Tela inícial"><i class="fas fa-arrow-left"></i></a>
+                    </li>
+                    <div id="container">
+                        <!-- <div class="remetente_mensagem_tempo">
+                            <div class="remetente">
+                                <h1 id="remetente_usuario">Me</h1>
+                                <div id="mensagem_texto">
+                                    Hello Leonid, how are you doing today?
+                                </div>
+                                <div id="tempo_resposta">
+                                    2022-02-17T14:20:00.000Z
+                                </div>
+                            </div>
+                        </div>    -->
+                    </div>
+                    <div class="envia_mensagemNone">
+                        <input type="text" id="txtMensagem" placeholder="Mensagem">
+                        <div class="icons">
+                            <i class="fa-sharp fa-regular fa-face-smile"></i>
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <i class="fas fa-key"></i>
+            <p> Suas mensagens pessoais são protegidas com a <span>criptografia
+                    de ponta a ponta.</span>
+            </p>
+        </footer>
+    </section>
+</body>
+
+</html>

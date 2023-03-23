@@ -1,0 +1,40 @@
+
+header {
+    height: 100vh;
+    background-color: var(--backContact__color);
+}
+.logo{
+    border-radius: 50%;
+}
+.panel__header {
+    background-color:var(--backContact__color);
+    padding: 10px 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.status {
+    display: flex;
+    gap: 50px;
+}
+
+header img,
+main img {
+    width: 60px;
+    height: 60px;
+}
+
+header span {
+    font-size: 24px;
+    color: var(--font__color);
+}
+
+.camp__finder {
+    background-color: #78909c;
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+}
+

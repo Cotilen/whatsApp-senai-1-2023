@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="WhatsApp Site" />
+    <script
+      src="https://kit.fontawesome.com/c0e5486155.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="imagem/png" href="./img/whatsapp.png" />
+    <script src="./js/app.js" defer type="module"></script>
+    <script src="./js/search-contact.js" defer></script>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/displays.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/chats/chatsStyle.css" />
+    <link rel="stylesheet" href="./css/chats/chatsProfileOptionsStyle.css" />
+    <link rel="stylesheet" href="./css/chats/chatsUserInteractionsStyle.css" />
+    <link rel="stylesheet" href="./css/chats/chatsFilterStyle.css" />
+    <link rel="stylesheet" href="./css/chats/chatsContainerStyle.css" />
+    <link rel="stylesheet" href="./css/return.css" />
+    <link rel="stylesheet" href="./css/messages/messagesStyle.css" />
+    <link rel="stylesheet" href="./css/messages/messagesBackgroundStyle.css" />
+    <link rel="stylesheet" href="./css/messages/messagesReceiverStyle.css" />
+    <link rel="stylesheet" href="./css/theme/white.css" />
+    <link
+      rel="stylesheet"
+      href="./css/messages/messagesConversationsStyle.css"
+    />
+    <link rel="stylesheet" href="./css/messages/messagesInteractions.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <title>WhatsApp</title>
+  </head>
+  <body>
+    <main>
+      <section class="chats">
+        <div class="chats__profile-options">
+          <i class="fas fa-user" id="profile-options__profile"></i>
+          <i class="fa-solid fa-sun" id="profile-options__change-color"></i>
+          <i class="fas fa-circle-notch"></i>
+          <i class="fas fa-comment-alt"></i>
+          <i class="fas fa-ellipsis-v" id="profile-options__more-options"></i>
+        </div>
+        <div class="chats__profile-options-mobile">
+          <span class="profile-options-mobile__text">WhatsApp</span>
+          <div class="profile-options-mobile__icons">
+            <i class="fas fa-camera"></i>
+            <i class="fa-solid fa-magnifying-glass" id="options__search"></i>
+            <i
+              class="fas fa-ellipsis-v"
+              id="profile-options-mobile__more-options"
+            ></i>
+          </div>
+        </div>
+        <div class="chats__user-interactions">
+          <i
+            class="fa-solid fa-sun"
+            id="profile-options__change-color-mobile"
+          ></i>
+          <span class="user-interactions__conversations">Conversas</span>
+          <span class="user-interactions__status">Status</span>
+          <span class="user-interactions__calls">Chamadas</span>
+        </div>
+        <div class="chats__filter">
+          <div class="filter__input-container">
+            <input class="filter__input" placeholder="Pesquisar" />
+            <i
+              class="fa-solid fa-magnifying-glass"
+              id="filter__icon-search"
+            ></i>
+          </div>
+          <i class="fas fa-filter filter__icon-filter"></i>
+        </div>
+        <div class="chats__chats-container"></div>
+      </section>
+      <section class="messages">
+        <img
+          src="./img/wallpaper-default.png"
+          alt=""
+          class="messages__background-default"
+        />
+        <div class="messages__receiver"></div>
+        <i class="fas fa-arrow-left return"></i>
+        <div class="messages__conversations-container"></div>
+        <div class="messages__interactions">
+          <i class="fas fa-laugh"></i>
+          <i class="fas fa-paperclip"></i>
+          <input
+            type="text"
+            name=""
+            class="interactions__send-mesage"
+            placeholder="Mensagem"
+          />
+          <i class="fas fa-microphone"></i>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

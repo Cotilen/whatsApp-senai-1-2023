@@ -1,0 +1,165 @@
+.container {
+    position: relative;
+    width: 1396px;
+    max-width: 100%;
+    height: calc(100vh - 40px);
+    background: #fff;
+    box-shadow: 0 1px 1px 0 #0000000c, 0 2px 5px 0 #0000000c;
+    display: flex;
+}
+
+.container .leftSide {
+    position: relative;
+    flex: 30%;
+    background: white;
+    border-right: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.container .leftSideNone {
+    display: none;
+}
+
+.container .rightSide {
+    position: relative;
+    flex: 70%;
+    background: #e5ddd5;
+}
+
+.container .rightSideNone {
+    display: none;
+}
+
+.userImg {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav_icons {
+    display: flex;
+}
+
+.nav_icons li {
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    color: #51585c;
+    font-size: 1.5rem;
+    margin-left: 22px;
+}
+
+.search_chat {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.search_chat div {
+    width: 100%;
+}
+
+.search_chat div input {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: white;
+    padding: 6px;
+    height: 38px;
+    border-radius: 30px;
+    font-size: 14px;
+    padding-left: 40px;
+}
+
+.search_chat div input::placeholder {
+    color: #bbb;
+}
+
+.search_chat div i {
+    position: absolute;
+    left: 30px;
+    top: 14px;
+    font-size: 1.2rem;
+}
+
+.chatlist {
+    position: relative;
+    height: calc(100% - 110px);
+    overflow-y: auto;
+}
+
+.block {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    transition: all .5s;
+    border: 0;
+}
+
+.chatlist .block:hover {
+    background: rgb(228, 228, 228);
+}
+
+.chatlist .block .imgbx {
+    position: relative;
+    width: 60px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chatlist .block .details {
+    position: relative;
+    width: 100%;
+}
+
+.chatlist .block .details .listHead {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.chatlist .block .details .listHead h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #111;
+}
+
+.chatlist .block .details .listHead .time {
+    font-size: 0.75rem;
+    color: #aaa;
+}
+
+
+@media (max-width: 640px) {
+    .container .rightSide {
+        display: block;
+        position: relative;
+        background: #e5ddd5;
+    }
+    .invisible {
+        display: none;
+    }
+   
+}

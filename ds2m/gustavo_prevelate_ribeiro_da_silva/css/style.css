@@ -1,0 +1,30 @@
+/* The structure of my website */
+
+html {
+    background-color: var(--primary-color);
+}
+
+body {
+    
+    display: grid;
+    grid-template-areas: 'header main';
+    grid-template-columns: minmax(450px, 350px) minmax(400px, 1fr);
+}
+
+header {
+    background-color: var(--primary-color);
+    display: block;
+    height: 100vh;
+    background-color: var(--tertiary-color);
+    overflow-y: scroll;
+}
+
+main {
+    grid-template-areas: 'header''main''footer';
+    grid-template-rows: 85px 1fr 65px;
+    background-color: var(--primary-color);
+    display: none;
+    height: 100vh;
+    overflow-y: scroll;
+}
+

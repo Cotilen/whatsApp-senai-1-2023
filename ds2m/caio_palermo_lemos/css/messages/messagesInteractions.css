@@ -1,0 +1,29 @@
+.messages__interactions {
+  display: none;
+  height: 10vh;
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.messages__interactions i {
+  font-size: 2rem;
+  color: var(--text-subcolor);
+}
+
+.interactions__send-mesage {
+  width: 80%;
+  height: 70%;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--message-input-color);
+  color: var(--text-color);
+  font-size: 1.5rem;
+  padding-left: 30px;
+}
+
+.interactions__send-mesage::placeholder {
+  color: var(--text-subcolor);
+}

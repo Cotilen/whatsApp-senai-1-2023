@@ -1,0 +1,54 @@
+/* website responsiveness */
+
+.display-none {
+    display: block;
+}
+
+.display-block {
+    display: block;
+}
+
+.back-contacts {
+    font-size: 2rem;
+    display: none;
+}
+
+
+/* Cellular responsiveness */
+@media (max-width:640px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    main {
+        height: 100vh;
+        width: 100%;
+    }
+    .header-main {
+        grid-template-columns: 40px 65px 1fr 65px;
+    }
+    .header-main,
+    .main-footer {
+        width: 100vw;
+    }
+    .message-contact-contact,
+    .message-contact-contact-me {
+        width: 300px;
+    }
+    .main-footer-send-message{
+        gap: 5px;
+        width: 250px;
+    }
+    .main-footer {
+        gap: 0px;
+    }
+    .panel-finder-main{
+        min-width: 290px;
+    }
+    .display-none {
+        display: none;
+    }
+    .back-contacts {
+        display: block;
+    }
+}

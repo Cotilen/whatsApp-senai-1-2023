@@ -1,0 +1,24 @@
+/* My contacts */
+
+.contact {
+    display: flex;
+    align-items: center;
+    cursor: pointer ;
+    width: 100%;
+    height: 96px;
+    padding: 20px 16px;
+    gap: 30px;
+    color: #000;
+    border-bottom: 1px solid var(--tertiary-color);
+    background-color: var(--secundary-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact:hover {
+    border: 7px solid var(--tertiary-color);
+    border-radius: 30px;
+}
+
+.image-contact{
+    border-radius: 50%;
+}

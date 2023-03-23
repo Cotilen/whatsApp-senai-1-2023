@@ -1,0 +1,24 @@
+.chats__user-interactions {
+  display: none;
+}
+
+.user-interactions__conversations::after {
+  content: "";
+  display: block;
+  border: 1px solid var(--text-color);
+}
+
+#profile-options__change-color-mobile::after {
+  margin-top: 8px;
+  content: "";
+  display: block;
+  border-bottom: 3px solid transparent;
+}
+
+#profile-options__change-color-mobile:hover::after {
+  margin-top: 8px;
+  content: "";
+  display: block;
+  border-bottom: 3px solid var(--text-color);
+  transition: all 0.5s;
+}

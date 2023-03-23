@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="Bianca Leão">
+    <meta name="description" content="Esse projeto é um clone do WhatsApp, utilizando HTML,CSS e JS">
+    <meta name="keywords" content="WhatsApp,Clone,JS">
+
+    <link rel="icon" type="image/png" href="./img/image 9.webp">
+
+    <!-- link font awesome -->
+
+    <script src="https://kit.fontawesome.com/94e8bd423f.js" crossorigin="anonymous"></script>
+
+    <!-- link google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- link arquivos css -->
+    <link rel="stylesheet" href="./css/cores.css">
+    <link rel="stylesheet" href="./css/loader.css">
+    <link rel="stylesheet" href="./css/configuracoes.css">
+    <link rel="stylesheet" href="css/side.css">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/whatsappWeb.css">
+    <link rel="stylesheet" href="./css/dropdown.css">
+    <link rel="stylesheet" href="./css/search.css">
+    <link rel="stylesheet" href="./css/chat.css">
+    <link rel="stylesheet" href="./css/scrowbar.css">
+
+
+    <!-- link arquivos js -->
+
+    <script src="./js/loading.js" defer></script>
+
+    <script src="./js/index.js" defer type="module"></script>
+
+    <script src="./js/estilizacao.js" defer></script>
+
+    <script src="./js/configuracoes.js" defer></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+
+    <title>WhatsApp</title>
+</head>
+
+
+<body class="h-100 py-5 backgroundClaroBody" id="bodyId">
+
+    <div id="loading" class="backgroundClaroBody">
+
+        <div class="textLoader">
+            <div class="whatsapp-loading">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <div class="progress-bar"></div>
+            <h5>WhatsApp</h5>
+            <span class="text-secondary"><i class="fas fa-lock"></i>Protegido com a criptografia de ponta a ponta</span>
+        </div>
+    </div>
+
+    <div class="header-body backgroudGreenHeaderBody" id="headerBody"></div>
+    <main class="d-flex align-items-stretch  mx-auto" id="conteudo">
+        <div id="configuracoes" style="display:none;" class="overflow-y-auto">
+            <header id="headerConfiguracoes">
+                <button>
+                    <i class="fas fa-arrow-left" id="back"></i>
+                </button>
+                <h3>Configurações</h3>
+            </header>
+            <div class="content-container-configuracoes" id="contentConfig">
+                <div class="me-container">
+                    <div class="aboutme">
+                        <img src="./img/WhatsApp Image 2022-10-03 at 15.00 1 (1).png" alt="Minha foto de perfil"
+                            id="perfilConfiguracoes">
+                        <div class="text-me">
+                            <span class="font-weight-bold">bibis</span>
+                            <span class="text-secondary">15.10.22 <i class="far fa-heart"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="main-content">
+                        <ul>
+                            <li><a href="#"><i class="fas fa-bell" style="color: gray;"></i>Notificações</a></li>
+                            <li><a href="#"><i class="fas fa-lock" style="color: gray;"></i>Privacidade</a></li>
+                            <li><a href="#"><i class="fas fa-shield-alt" style="color: gray;"></i>Segurança</a></li>
+                            <li><a href="#" id="tema-link"><i class="fas fa-toggle-on" style="color: gray;"></i>Tema</a>
+                            </li>
+                            <li><a href="#"><i class="fas fa-comment-alt" style="color: gray;"></i>Papel de parede de
+                                    conversa</a></li>
+                            <li><a href="#"><i class="fas fa-arrow-down" style="color: gray;"></i>Donwload automático de
+                                    arquivos de mídia</a></li>
+                            <li><a href="#"><i class="far fa-file" style="color: gray;"></i>Solicitar dados da conta</a>
+                            </li>
+                            <li><a href="#"><i class="fas fa-keyboard" style="color: gray;"></i>Atalhos do teclado</a>
+                            </li>
+                            <li><a href="#"><i class="fas fa-question-circle" style="color: gray;"></i>Ajuda</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-modal" class="modal">
+                <div class="modal-content" id="backgroundColorModalContent">
+                    <h4>Tema</h4>
+                    <div class="divLabels d-flex flex-column">
+                        <label class="form-check-label text-secondary">
+                            <input type="radio" name="cor" value="claro" class="form-check-input">
+                            <span>Claro</span>
+                        </label>
+                        <label class="form-check-label text-secondary">
+                            <input type="radio" name="cor" value="escuro" class="form-check-input">
+                            <span>Escuro</span>
+                        </label>
+                    </div>
+                    <div class="button-group">
+                        <button class="cancel-button">CANCELAR</button>
+                        <button class="ok-button">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="side bg-white border-right " id="secaoPrincipal">
+            <header class="d-flex backgroundClaroSideHeader" id="sideHeader">
+                <div class="profile-photo rounded-circle my-auto ml-2 mr-auto" id="divPerfil">
+                    <img src="./img/tsapp-image-2022-10-03-at-15-00-1-1.webp" alt="Minha foto de perfil">
+                </div>
+                <nav>
+                    <a href="#" title="Status">
+                        <i class="fas fa-circle-notch text-secondary"></i>
+                    </a>
+                    <a href="#" title="Nova conversa">
+                        <i class="fas fa-comment-dots text-secondary"></i>
+                    </a>
+                    <div class="dropdown d-flex">
+                        <button class="btn dropdown-toggle" type="button" id="menuDropdown" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-ellipsis-v text-secondary" id="dropIcon" title="Mais opções"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+                            <li><a class="dropdown-item" href="#">Novo grupo</a></li>
+                            <li><a class="dropdown-item" href="#">Perfil</a></li>
+                            <li><a class="dropdown-item" href="#">Catálogo</a></li>
+                            <li><a class="dropdown-item" href="#">Mensagens favoritas</a></li>
+                            <li><a class="dropdown-item" href="#">Etiquetas</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="mostrarConfiguracoes()">Configurações</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Desconectar</a></li>
+                        </ul>
+                    </div>
+
+                </nav>
+
+            </header>
+
+
+            <div class="search-bar w-100 py-2 px-3 backgroundClaroSearchBar" id="search-bar">
+                <div class="input-group">
+
+                    <div class="input-group-prepend position-absolute search-button-wrapper">
+
+                        <button class="btn border-2 text-black-50 ml-2" type="button" alt="guarda o pesquisar e a seta"
+                            aria-label="btn">
+                            <i class="fas fa-search" id="search"></i>
+                            <i class="fas fa-arrow-left" id="arrow"></i>
+                        </button>
+
+                    </div>
+
+                    <input type="text" class="form-control rounded-pill pl-5"
+                        placeholder="Pesquisar ou começar uma nova conversa" id="inputSearch">
+                </div>
+            </div>
+
+            <section class="contacts overflow-y-auto" id="contacts"> </section>
+
+        </section>
+
+        <section class="chat flex-fill bg-light d-flex flex-column" id="chatContainer">
+
+            <header class="d-flex backgroundClaroSideHeader" id="headerChat"></header>
+            <button class="buttonBack">
+                <i class="fas fa-arrow-left" id="back2"></i>
+            </button>
+            <section class="dialog flex-fill overflow-x-auto imgClara" id="messages">
+
+            </section>
+
+            <footer class="d-flex backgroundClaroSideHeader" id="chatFooter">
+
+
+
+                <a href="#" class="icon my-auto mx-4" id="guarda-emoji" aria-label="emoji">
+                    <div id="emoji-list"></div>
+                    <i class="far fa-grin text-secondary my-auto" id="emoji-picker-btn"></i>
+                </a>
+
+                <div class="form-group my-auto flex-fill" id="form-group">
+                    <input type="text" class="form-control rounded-pill" id="message" placeholder="Mensagem">
+                </div>
+                <a href="#" class="icon my-auto mx-4" id="btn-microphone" aria-label="microfone">
+                    <i class="fas fa-microphone text-secondary my-auto"></i>
+                </a>
+            </footer>
+        </section>
+    </main>
+</body>
+
+</html>
+
+</body>
+
+</html>

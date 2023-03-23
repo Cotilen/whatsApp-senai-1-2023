@@ -1,0 +1,64 @@
+#inputSearch {
+    text-align: left;
+
+}
+
+#message {
+    width: 100%;
+    min-width: 40vw;
+}
+
+#inputSearch::placeholder {
+    text-align: center;
+    transition: all .2s;
+    font-size: 0.75rem;
+    font-size: clamp(0.75rem, 0.675rem + 0.375vw, 1.125rem);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #ced4da;
+}
+
+#search {
+    font-size: 1rem;
+    transition: width 0.2s ease-in-out;
+    width: 100%;
+}
+
+#arrow {
+    font-size: 1.3rem;
+    display: none;
+    color: #009688;
+}
+
+#search:focus~#arrow {
+    display: inline-block;
+}
+
+
+/* isso apaga placeholder de Input ao clicar dentro do campo em diferentes navegadores */
+
+#inputSearch:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+#inputSearch:focus:-moz-placeholder {
+    /* Firefox 18- */
+    color: transparent;
+}
+
+#inputSearch:focus::-moz-placeholder {
+    /* Firefox 19+ */
+    color: transparent;
+}
+
+#inputSearch:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+@media (max-width:500px) {
+    #inputSearch {
+        width: 85vw;
+    }
+}

@@ -1,0 +1,69 @@
+.side {
+    width: auto;
+}
+
+.side header {
+    height: 60px;
+}
+
+.side header .profile-photo {
+    height: 40px;
+    width: 40px;
+    background-color: #dddddd;
+}
+
+.side header a {
+    width: 50px;
+    text-align: center;
+}
+
+.side header a i {
+    font-size: 24px;
+    line-height: 60px;
+}
+
+.side .search-bar {
+    height: 55px;
+}
+
+.side .search-bar .search-button-wrapper {
+    z-index: 9;
+}
+
+.side .contacts .profile-photo {
+    height: 50px;
+    width: 50px;
+    background-color: #dddddd;
+}
+
+.side .contacts .last-message {
+    font-size: 12px
+}
+
+.list-unstyled{
+    cursor: pointer;
+}
+
+ul{
+    display: flex;
+    gap: 15px;
+}
+
+.media-body {
+    border-bottom: 1px solid #dee2e6;
+    padding-right: 16px; 
+    width: 100%;
+  }
+
+.last-message-time{
+    float: right;
+    font-size: 12px;
+}
+
+.status-friend{
+    display: flex;
+    gap: 10px;
+}
+
+
+

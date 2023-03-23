@@ -1,0 +1,35 @@
+.chats__filter {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+  margin: 12px;
+  margin-bottom: 24px;
+}
+
+.filter__input-container {
+  position: relative;
+}
+
+.filter__input {
+  width: 35vw;
+  height: 50px;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  border: none;
+  color: var(--text-color);
+  font-size: 1.3rem;
+  padding-left: 100px;
+}
+
+.filter__input::placeholder {
+  color: var(--text-subcolor);
+}
+
+#filter__icon-search {
+  position: absolute;
+  top: 15px;
+  left: 25px;
+  color: var(--text-color);
+  font-size: 1.25rem;
+}

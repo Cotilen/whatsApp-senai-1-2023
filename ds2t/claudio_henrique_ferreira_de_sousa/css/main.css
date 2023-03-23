@@ -1,0 +1,197 @@
+.container__main{
+    height: 100%;
+    width: 70%;
+    background: #f0f2f5;
+    border-left: 1px solid #e9edef;
+}
+
+.container__inicial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    
+    
+}
+.none{
+    display: none;
+}
+
+.main__title{
+    font: inherit;
+    font-size: 2rem;
+    padding-bottom: 5vh;
+    color: #41525d;
+}
+.img-main{
+    height: 20vh;
+    width: 20vw;
+}
+
+.text{
+    font-size: 1rem;
+    color: #41525d;
+}
+
+.prot{
+    padding-top: 30vh;
+    font-size: 0.8rem;
+    color: #41525d;
+}
+
+
+
+.header__main{
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    height: 59px;
+    background: #f0f2f5;
+    gap: 15px
+}
+
+.header__main__name{
+    display: flex;
+    flex-direction: column;
+}
+
+.header__name{
+    font-size: 1rem;
+}
+
+.header__online{
+    font-size: 0.8rem;
+}
+
+.container__conversa{
+    background-image: url(../recursos/img/zapzap.webp);
+    height: calc(100% - 120px);
+   
+    
+}
+
+.footer__main{
+    display: flex;
+    align-items: center;
+    min-height: 61px;
+    width: 100%;
+    gap: 8px;
+    
+}
+
+.icon{
+    height: 26px;
+    width: 26px;
+    padding: 8px;
+
+}
+
+.input-mensagem{
+    width: 50vw;
+    border-radius: 10px;
+    height: 4vh;
+    text-align: start;
+    border: none;
+}
+
+
+
+.container__mensagem{
+    display: flex;
+    height: calc(100% - 120px);
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+}
+
+.minha-mensagem{
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #d9fdd3;
+
+}
+
+.minha-hora{
+    padding-left: 4px;
+    font-size: 0.7rem;
+    
+}
+
+.container-minha-mensagem{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: flex-end;
+}
+
+.container-sua-mensagem{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sua-mensagem{
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #ffffff;
+}
+
+.sua-hora{
+    padding-left: 4px;
+    font-size: 0.7rem;
+    
+}
+
+.back{
+    display: none;
+}
+
+@media (max-width: 960px){
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        }
+    .container__aside{
+        width: 100%;
+        min-height: 100%;
+    }
+    .container__main{
+        width: 100vw;
+        min-height: 100vh;
+    }
+    .container__inicial{
+        display: none;
+    }
+    .back {
+        position: fixed;
+        height: 50px;
+        width: 50px;
+        background-color: #00A884;
+        display: grid;
+        place-content: center;
+        color: black;
+        border-radius: 50%;
+        z-index: 100;
+        right: 16px;
+        bottom: 86px;
+        transition: opacity 0.5s;
+    }
+    .footer__main{
+        justify-content: center;
+        align-items: center;
+        min-height: 61px;
+    }
+    .input-mensagem{
+        width: 70vw;
+        
+    }
+    .icon {
+        height: 5vh;
+        width: 5vw;
+        padding: 4px;
+    
+    }
+}

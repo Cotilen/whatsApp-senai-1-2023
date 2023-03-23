@@ -1,4 +1,4 @@
-# Situação de Aprendizagem Somativa!
+
 
 Você faz parte de uma equipe de desenvolvedores front-end e foi designado para desenvolver a interface do usuário de um projeto de chat interno para a empresa em que trabalha. A empresa decidiu que a interface deverá ser um clone do WhatsApp, pois a grande maioria dos funcionários já está acostumada a utilizá-lo em seu dia a dia.
 
@@ -27,6 +27,7 @@ Você deverá desenvolver um clone do whatsApp responsivo. O projeto deverá ate
 - Interface baseada no endereço https://web.whatsapp.com/
 - Consumir os dados do arquivos contatos.js
 - Seguir as boas práticas como semântica e acessibilidade;
+- Obs.: para importar o arquivo contatos.js utilize o seguinte endereço: https://fernandoleonid.github.io/whatsApp-senai-1-2023/recursos/contatos.js
 ---
 # Antes de começar a desenvolver
 
@@ -48,34 +49,41 @@ Você deverá desenvolver um clone do whatsApp responsivo. O projeto deverá ate
 Para entregar o seu projeto você deverá criar um Pull Request deste repositório, que deverá conter:
 - Código HTML, CSS e JS.
 - Arquivo README.md com link para github page, além do screenshot do **APP**, uma descrição do projeto, lista dos critérios (autoavaliação) e tudo o que foi utilizado no projeto.
+- Entrega final da próxima aula (referencia dia 23/02/2023)
 - O link do github pages deve seguir o exemplo abaixo:
 
 `https://fernandoleonid.github.io/whatsApp-senai-1-2023/turma/nome-do-aluno`
+=======
+O site desenvolvido foi um clone do whatsapp, uma atividade proposta pelo professor Leonid, a seguir temos os critérios de avaliação que o professor solicitou.
 
 # Critérios de Avaliação
-- [ ] `Codificou o app conforme o original?`
-- [ ] Nomeou as classes CSS utilizando o padrão BEM?
-- [ ] `O app está responsivo?`
-- [ ] Utilizou algum framework CSS?
-- [ ] `Consumiu o JSON para mostrar todos os contatos?`
+- [✓] `Codificou o app conforme o original?`
+- [✓] Nomeou as classes CSS utilizando o padrão BEM?
+- [✓] `O app está responsivo?`
+- [✓] Utilizou algum framework CSS?
+- [✓] `Consumiu o JSON para mostrar todos os contatos?`
 - [ ] Criou outros itens, na lista de contatos, como a quantidade de mensagens lidas?
-- [ ] `Consumiu o JSON para mostrar as mensagens de cada contato?`
-- [ ] Foi criado variáveis pensando nas boas praticas?
-- [ ] `Foi criado funções pensando em responsabilidade única?`
-- [ ] `Foi criado funções pensando no principio de funções puras?`
-- [ ] O texto do README é objetivo e sucinto?
-- [ ] O screenshot mostra um pouco do projeto?
-- [ ] Existe um link para o github page no README?
-- [ ] Existe um link do autor do projeto no README?
-- [ ] `Fez a autoavaliação?`
+- [✓] `Consumiu o JSON para mostrar as mensagens de cada contato?`
+- [✓] Foi criado variáveis pensando nas boas praticas?
+- [✓] `Foi criado funções pensando em responsabilidade única?`
+- [✓] `Foi criado funções pensando no principio de funções puras?`
+- [✓] O texto do README é objetivo e sucinto?
+- [✓] O screenshot mostra um pouco do projeto?
+- [✓] Existe um link para o github page no README?
+- [✓] Existe um link do autor do projeto no README?
+- [✓] `Fez a autoavaliação?`
   
-> *Os textos em destaque são critérios críticos, ou seja, precisam ser atingidos.* <br>
-> *Os demais, são critérios desejáveis, não necessários para aprovação, mas importantes para se destacar entre os demais desenvolvedores.*
-
-# Projeto dos alunos
-* [DS2M](./ds2m/)
-* [DS2T](./ds2t/)
+  todos marcados com "✓"  foram devidameente realizados. 
   
-# Autor
+  ## FOI UTILIZADO:
+  - Pure.CSS
+  - HTML
+  - CSS
+  - @media
 
-[![](https://avatars.githubusercontent.com/u/42476943?v=4&s=100)](https://github.com/fernandoleonid)
+  
+![](./recursos/images/resultado.png.PNG) 
+[Trabalho]
+
+## Autor
+- [Bianca Duarte](https://github.com/biiaduartez)
