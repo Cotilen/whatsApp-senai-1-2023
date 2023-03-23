@@ -1,12 +1,10 @@
 'use strict'
 
-import { contatos } from "https://fernandoleonid.github.io/whatsApp-senai-1-2023/recursos/contatos.js"
-
 let i = 0
 
-
-
 const criarContato = (contato) => {
+
+
     const contact = document.createElement('button')
     contact.classList.add('contact')
 
@@ -31,7 +29,17 @@ const criarContato = (contato) => {
         return contact
 }
 
-const carregarContatos = () => {
+const carregarContatos = async() => {
+
+    let url = `http://localhost:8080/v1/senai/contatos?id=1`
+
+    let response = await fetch(url)
+    let data = await response.json()
+    let contatos = data.contatos
+
+
+
+
     const container = document.getElementById('container')
     const contacts = contatos.map(criarContato)
 
