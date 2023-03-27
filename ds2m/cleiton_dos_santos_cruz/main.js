@@ -31,7 +31,7 @@ const criarContato = (contato) => {
 
 const carregarContatos = async() => {
 
-    let url = `http://localhost:8080/v1/senai/contatos?id=1`
+    let url = `https://api-whatsapp-bzwu.onrender.com/v1/senai/contatos?id=1`
 
     let response = await fetch(url)
     let data = await response.json()
